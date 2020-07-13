@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+body {
+    max-width: 2000px;
+    margin: 0;
+    font: 100% "Segoe UI light", Arial, sans-serif;
+    color: #524743;
+    color: white;
+    padding: 0;
+}
+
+header {
+background-image: url(../limg/logomain.jpg);
+background-size: cover;
+background-position: center;
+min-height: 969px;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.header-menu {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    flex-wrap: wrap;
+
+    font-size: 20px;
+    
+}
+
+.header-menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 4px;
+    border: 1px solid transparent;    
+}
+
+.header-menu li a:hover {
+  color: #495675;
+}
+.header-menu-lang {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+.header-menu-lang li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 4px;
+    border: 1px solid transparent;    
+}
+.header-menu-lang li a:hover {
+  color: #495675;
+}
+.logo-icon {
+ width: 150px;
+}
+.header-text {
+  font: 100% "Segoe UI light", Arial, sans-serif;
+  font-size: 40px;
+  margin: 100px 0px 30px 70px;
+  text-decoration: none;  
+  position: center;
+
+}
+.header-textt  {
+  font: 100% "Segoe UI light", Arial, sans-serif;
+  margin: 30px 30px 30px 70px; 
+  font-size: 20px;
+  color:#fff
+}
+p {
+font: 100% "Segoe UI light", Arial, sans-serif;   
+font-size: 15px;
+color: #000;
+}
+h2 {
+font: 100% "Segoe UI light", Arial, sans-serif;   
+font-size: 25px;
+color: #000;
+text-align: center;
+}
+h3 {
+font: 100% "Segoe UI light", Arial, sans-serif;   
+font-size: 30px;
+color: #000;    
+text-align: center;
+}
+
+@media (max-width: 900px) {
+    
+    .header-menu {
+    display: none;
+    align-items: center;
+    flex: 1;
+    }
+    .header-menu-lang {
+    display: none;
+    align-items: center;
+    flex: 1;
+    }
+}
+
+@media (min-width: 900px) {
+    header nav div, .navBurger {
+    display: none;
+    align-items: center;
+
+    }
+}
+/* Controls */
+
+.button {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.7s;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 40px 70px;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #495675;
+    cursor: pointer;
+}
+ ::before, ::after {
+	 box-sizing: border-box;
+}
+ button {
+	 position: relative;
+	 display: inline-block;
+	 cursor: pointer;
+	 outline: none;
+	 border: 0;
+	 vertical-align: middle;
+	 text-decoration: none;
+	 background: transparent;
+	 padding: 0;
+	 font-size: inherit;
+	 font-family: inherit;
+}
+ button.learn-more {
+	 width: 12rem;
+	 height: auto;
+     font-size: 13px;
+}
+ button.learn-more .circle {
+	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	 position: absolute;
+	 display: block;
+	 margin: 0;
+	 width: 3rem;
+	 height: 3rem;
+	 background: #282936;
+	 border-radius: 1.625rem;
+}
+ button.learn-more .circle .icon {
+	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 margin: auto;
+	 background: #495675;
+}
+ button.learn-more .circle .icon.arrow {
+	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	 left: 0.625rem;
+	 width: 1.125rem;
+	 height: 0.125rem;
+	 background: none;
+}
+ button.learn-more .circle .icon.arrow::before {
+	 position: absolute;
+	 content: '';
+	 top: -0.25rem;
+	 right: 0.0625rem;
+	 width: 0.625rem;
+	 height: 0.625rem;
+	 border-top: 0.125rem solid #fff;
+	 border-right: 0.125rem solid #fff;
+	 transform: rotate(45deg);
+}
+ button.learn-more .button-text {
+	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 padding: 0.75rem 0;
+	 margin: 0 0 0 1.85rem;
+	 color: #282936;
+	 font-weight: 700;
+	 line-height: 1.6;
+	 text-align: center;
+	 text-transform: uppercase;
+}
+ button:hover .circle {
+	 width: 100%;
+}
+ button:hover .circle .icon.arrow {
+	 background: #fff;
+	 transform: translate(1rem, 0);
+}
+ button:hover .button-text {
+	 color: #fff;
+}
+.product-card img {
+    display: block;
+    width: 100%;
+}
+.product-cardd img {
+    display: block;
+    width: 15%;
+}
+
+.product-card .product-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.product-cardd {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 500px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+}
+
+@media (min-width: 750px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr 1fr 
+    }
+}
+/* button burger */
+.navBurger {
+	 position: fixed;
+	 right: 20px;
+	 top: 20px;
+	 cursor: pointer;
+     background: #FFFFFF;
+     background: #495675;
+	 box-sizing: border-box;
+	 background-clip: content-box;
+	 width: 30px;
+	 height: 24px;
+	 border-top: 11px solid transparent;
+	 border-bottom: 11px solid transparent;
+	 -webkit-transform: rotate(0deg);
+	 transform: rotate(0deg);
+	 -webkit-transition: all 0.25s ease-in-out;
+	 transition: all 0.25s ease-in-out;
+
+}
+ .navBurger:before, .navBurger:after {
+	 content: "";
+	 position: absolute;
+	 background: #495675;;
+	 height: 2px;
+	 width: 100%;
+	 right: 0;
+	 will-change: rotate;
+	 -webkit-transform: rotate(0deg);
+	 transform: rotate(0deg);
+	 -webkit-transition: all 0.5s ease;
+	 transition: all 0.5s ease;
+}
+ .navBurger:before {
+	 top: -10px;
+}
+ .navBurger:after {
+	 bottom: -10px;
+	 width: 90%;
+}
+ .navBurger.active {
+	 background: transparent;
+	 background-clip: content-box;
+}
+ .navBurger.active:before {
+	 -webkit-transform: rotate(135deg);
+	 transform: rotate(135deg);
+	 top: 0;
+	 background: #fff;
+	 width: 110%;
+}
+ .navBurger.active:after {
+	 bottom: 0;
+	 -webkit-transform: rotate(-135deg);
+	 transform: rotate(-135deg);
+	 background: #fff;
+	 width: 110%;
+}
+ .overlay {
+	 position: fixed;
+	 background: #495675;
+	 top: 0;
+	 right: 0;
+	 width: 100%;
+	 height: 100%;
+	 opacity: 0;
+	 transform-origin: right top;
+	 transform: scale(0);
+	 visibility: hidden;
+	 transition: all 0.4s ease-in-out;
+	 overflow: hidden;
+}
+ .overlay.open {
+	 opacity: 0.99;
+	 visibility: visible;
+	 transform: scale(1);
+}
+ .overlay.open li {
+	 display: block;
+	 animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards;
+	 animation-delay: 0.4s;
+	 transform: rotate(-7deg);
+	 transform-origin: right bottom;
+}
+
+ .overlayMenu {
+	 position: center;
+	 text-align: center;
+	 right: 10vw;
+	 bottom: 10vw;
+}
+ .overlayMenu ul {
+	 list-style: none;
+	 padding: 0;
+	 margin: 0 auto;
+	 display: block;
+	 position: relative;
+	 height: 100%;
+}
+ .overlayMenu ul li {
+	 display: block;
+	 position: relative;
+	 opacity: 0;
+	 width: 100%;
+}
+ .overlayMenu ul li a {
+	 display: inline-block;
+	 color: #fff;
+	 text-decoration: none;
+	 font-size: 20px;
+	 padding: 10px 40px 10px 40px;
+	 margin: 0 0;
+	 transition: 0.2s.
+     }
+ .overlayMenu ul li a:hover, .overlayMenu ul li a:active, .overlayMenu ul li a:focus {
+	 padding-left: 20px;
+     color: #000;
+}
+
+ .locked {
+	 overflow: hidden;
+}
+ @keyframes fadeInRight {
+	 0% {
+		 opacity: 0;
+		 left: 50px;
+	}
+	 100% {
+		 opacity: 1;
+		 left: 0;
+		 transform: rotate(0deg);
+	}
+}
+/*UP*/
+.text-block {
+  width: 25px;
+  margin: 25px;
+}
+
+#go-top {
+  position: fixed; 
+  bottom: 25px; 
+  right: 25px;
+  text-align: center;
+  cursor:pointer; 
+  display:none;
+  width: 40px;
+  height: 40px;
+  background: #999eaa;
+  line-height: 35px;
+  border-radius: 4px;
+}
+
+#go-top:hover {
+  background: #495675;
+  color: #fff;
+}
+/*carusel*/
+.home-demo .item  {
+width: 70%;
+}
+/*footer*/
+footer {
+opacity:0.8;
+-moz-opacity:0.8;
+filter: alpha(opacity=80) black;
+-khtml-opacity: 0.8;
+background-color:#000;
+background-image: url(../limg/logomain.jpg);
+background-size: cover;
+background-position: center;
+min-height: 800px;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+ul.footer-menu {
+    display: block;
+    text-align: start;
+    padding: 0;
+    list-style-type: none;
+    flex-wrap: wrap;
+    font-size: 15px;
+    line-height: 50px;
+    margin: 50px;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 4px;
+    border: 1px solid transparent;    
+}
+
+.footer-menu li a:hover {
+  color: #495675;
+}
+.input-text, .input-email, .input-phone, .input-mess {
+background:rgba(0,0,0,.15)
+
+}
+.text-input {
+ color: white;
+}
+.text-input {
+ color: white;
+}
+.text-logo {
+ text-decoration: none;
+text-transform: uppercase;
+color: #FFFFFF;
+padding: 4px;
+border: 1px solid transparent;   
+}
+
+.input-text, .input-email, .input-phone {
+    width: 300px;
+    height: 50px;
+}
+.input-mess {
+     width: 300px;
+    height: 250px;
+}
+.logo-footer {
+    margin: 0;
+    padding: 0;
+}
